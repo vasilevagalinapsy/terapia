@@ -10,7 +10,9 @@
      Если сеть недоступна — откат на системные (см. font-family). -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+<!-- Шрифты не задерживают показ страницы: если Google Fonts не грузится (в России бывает), страница открывается системным шрифтом. -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Manrope:wght@400;500;600;700&display=swap" media="print" onload="this.media='all'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Manrope:wght@400;500;600;700&display=swap"></noscript>
 
 <!-- ============================================================
      ССЫЛКИ (подставлены 30.08): diagnosticLink и articlesLink в CONFIG
@@ -44,9 +46,11 @@
      СТАТУС (обновлено 30.08, decisions/0065): назначен ОСНОВНЫМ
      лид-магнитом воронки — отменяет прежнее «не квиз-магнит» из
      product_ladder_gala.md → «Вход в воронку / лид-магнит» (решение
-     13.07). Ссылки в CONFIG подставлены. Перед публикацией осталось:
-     (1) выбрать хостинг по прецеденту test-uderzhivaet/testzvet
-     (decisions/0007); (2) прогнать текст через скилл proverka-teksta.
+     13.07). ОПУБЛИКОВАНО: https://terapia.vasilevagalina.ru
+     (репозиторий vasilevagalinapsy/terapia, схема — decisions/0007;
+     этот файл здесь остаётся каноническим исходником, публичный
+     репозиторий — копия для раздачи, обновлять его при правках).
+     Прогнать текст через скилл proverka-teksta ещё не делали.
 
      МЕХАНИКА: список из 10 фраз-сигналов, человек отвечает «да» или
      «нет» — откликается или нет. Экран результата не пересказывает
