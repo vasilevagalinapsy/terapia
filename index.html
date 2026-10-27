@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
 <title>Нужна ли мне терапия? — тест · Бережная психология Галины Васильевой</title>
-<meta name="description" content="10 фраз, которые помогут понять, что происходит с тобой сейчас. Около 2 минут, без сбора данных.">
+<meta name="description" content="10 фраз, которые помогут понять, что происходит с тобой сейчас. Около 2 минут, ответы никуда не уходят.">
 
 <!-- Шрифты: Cormorant Garamond (заголовки, serif) + Manrope (текст, sans).
      Если сеть недоступна — откат на системные (см. font-family). -->
@@ -278,6 +278,33 @@
 
   .social-proof{text-align:center;font-size:13px;color:var(--ink-soft);margin-top:20px;}
 </style>
+<!-- Яндекс Метрика: начало (tools/vstavit-metriku.py) -->
+<script>
+(function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};m[i].l=1*new Date();for(var j=0;j<document.scripts.length;j++){if(document.scripts[j].src===r){return;}}k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})(window,document,"script","https://mc.yandex.ru/metrika/tag.js","ym");
+ym(113830075, "init", {clickmap:false, trackLinks:true, accurateTrackBounce:true, webvisor:false});
+document.addEventListener("click", function (e) {
+  var a = e.target.closest && e.target.closest("a[href]");
+  if (!a) return;
+  var h = a.href, cel = null;
+  if (/t\.me\/galina_psy|max\.ru\/u\//.test(h)) cel = "napisat";
+  else if (/t\.me\/(s\/)?vasileva_galina_psy/.test(h)) cel = "kanal";
+  else if (/^https?:\/\/(www\.)?vasilevagalina\.ru/.test(h)) cel = "sayt";
+  if (cel) ym(113830075, "reachGoal", cel);
+}, true);
+document.addEventListener("DOMContentLoaded", function () {
+  try { if (localStorage.getItem("cookie-ok")) return; } catch (e) {}
+  var p = document.createElement("div");
+  p.setAttribute("role", "status");
+  p.style.cssText = "position:fixed;left:12px;right:12px;bottom:12px;z-index:99999;max-width:520px;margin:0 auto;display:flex;gap:12px;align-items:center;padding:10px 14px;border-radius:12px;background:rgba(24,22,28,.92);color:#fff;font:13px/1.4 system-ui,-apple-system,sans-serif;box-shadow:0 4px 16px rgba(0,0,0,.2)";
+  p.innerHTML = '<span style="flex:1">Сайт считает посещения через Яндекс Метрику — это файлы cookie.</span><button type="button" style="flex:none;border:0;border-radius:8px;padding:6px 12px;background:#fff;color:#18161c;font:inherit;cursor:pointer">Понятно</button>';
+  p.querySelector("button").onclick = function () {
+    try { localStorage.setItem("cookie-ok", "1"); } catch (e) {}
+    p.remove();
+  };
+  document.body.appendChild(p);
+});
+</script>
+<!-- Яндекс Метрика: конец -->
 </head>
 <body>
 <div class="wrap">
@@ -291,7 +318,7 @@
     <div class="meta-row">
       <span>10 вопросов</span>
       <span>2 минуты</span>
-      <span>без сбора данных</span>
+      <span>ответы остаются у тебя</span>
     </div>
     <button class="btn btn-dark" id="start-btn">Начать</button>
     <p class="expert-note">Клинический психолог · 11 лет практики</p>
